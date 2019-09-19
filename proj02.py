@@ -5,6 +5,7 @@ Created on Thu Sep 12 19:04:26 2019
 """
 #Project 2
 import math
+
 print("\nWelcome to car rentals. \n")
 print("At the prompts, please enter the following: ")
 print("\tCustomer's classification code (a character: BDW) ")
@@ -12,10 +13,10 @@ print("\tNumber of days the vehicle was rented (int)")
 print("\tOdometer reading at the start of the rental period (int)")
 print("\tOdometer reading at the end of the rental period (int)")
 
-first_input = input("\nWould you like to continue (Y/N)? ")
+
 while True:
 #------------------------"Would you like to continue?" Prompts-----------------   
-  #first_input = input("\nWould you like to continue (Y/N)? ")
+  first_input = input("\nWould you like to continue (Y/N)? ")
   if first_input == "Y" or first_input == "y": 
     classification = input("\nCustomer code (BDW): ")
 
@@ -33,7 +34,6 @@ while True:
           mileage_cost = real_miles_driven * 0.25
           total_sum = float(mileage_cost + base_money_owed)
           rounded_sum = round(total_sum, 2)
-
           print("\nCustomer summary:")
 
           print("\tclassification code:", classification)
